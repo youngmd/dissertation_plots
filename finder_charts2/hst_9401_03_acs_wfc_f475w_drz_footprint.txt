@@ -1,0 +1,21 @@
+# Footprint Finder
+# ================
+#
+# footprint-file for "hst_9401_03_acs_wfc_f475w_drz.fits"
+# 
+# Arguments: -r ACS/n4621/hst_9401_03_acs_wfc_f475w_drz.fits
+# 
+# Number of chips found, global area [pixel^2], global x_barycenter, global y_barycenter, global ra_barycenter, global dec_barycenter
+# Chipnumber, number of footprint points, parent chip, is chip/island=0 or hole=1, has interior chip/island/hole=1 or not=0, area [pixel^2], x_barycenter, y_barycenter, ra_barycenter, dec_barycenter
+#    x, y, ra, dec
+2 16269605.0 2885.31243334 2905.26292107 190.909518518 11.5561335511
+0 4 0 0 0 7943139.0 1934.49141227 2436.33966446 190.922997293 11.5496204282
+	  2087   291  190.920834   11.519824
+	  3863  1122  190.895660   11.531366
+	  1794  4602  190.924991   11.579699
+	     3  3696  190.950381   11.567113
+1 4 1 0 0 8326466.0 3792.36033751 3352.59827411 190.896659684 11.5623462482
+	  3909  1148  190.895008   11.531727
+	  5735  2030  190.869122   11.543974
+	  3693  5571  190.898067   11.593157
+	  1843  4629  190.924296   11.580074

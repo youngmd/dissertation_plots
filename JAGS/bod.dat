@@ -1,0 +1,61 @@
+#id      x1    x2         DIC
+#1    L_K   L_K  836.1382
+#2    L_V   L_K  744.0819
+#3   Mdyn   L_K  685.7698
+#4   mass   L_K  724.0621
+#5    R_e   L_K  820.0080
+#8    L_V   L_V  913.9622
+#9   Mdyn   L_V  751.6734
+#10  mass   L_V  876.7679
+#11   R_e   L_V  898.3613
+#15  Mdyn  Mdyn  830.0738
+#16  mass  Mdyn  758.5720
+#17   R_e  Mdyn  817.7558
+#22  mass  mass  883.8916
+#23   R_e  mass  896.8893
+#29   R_e   R_e 1013.8159
+#id x1 x2 dis DIC
+#0  density density       0 NA
+#1  density Mdyn          0 394.3716
+#2  density mass          0 402.8719
+#3   density R_e          0 549.4537
+#4   density L_K          0 389.5888
+#5   density L_V          0 437.2797
+#6     Mdyn Mdyn          0 473.2034
+#7     Mdyn mass          0 431.7550
+#8      Mdyn R_e          0 507.2654
+#9      Mdyn L_K          0 396.2480
+#10     Mdyn L_V          0 411.3498
+#11    mass mass          0 489.4825
+#12     mass R_e          0 498.9501
+#13     mass L_K          0 429.1367
+#14     mass L_V          0 441.7981
+#15      R_e R_e          0 612.7587
+#16      R_e L_K          0 545.4615
+#17      R_e L_V          0 550.6881
+#18      L_K L_K          0 475.0979
+#19      L_K L_V          0 468.0301
+#20      L_V L_V          0 476.1845
+id x1 x2 dis DIC
+1      Mdyn  Mdyn       0       790
+2       Mdyn mass       0       792.9
+3       Mdyn R_e        0       822.1
+4       Mdyn L_K        0       665.7
+5       Mdyn L_V        0       682
+6       Mdyn density    0       788
+1        mass mass          0 8.648794e+02
+2         mass R_e          0 8.574752e+02
+3         mass L_K          0 7.677167e+02
+4         mass L_V          0 7.683808e+02
+5     mass density          0 792
+6          R_e R_e          0 9.695460e+02
+7          R_e L_K          0 7.979122e+02
+8          R_e L_V          0 882.4
+9      R_e density          0 9.559689e+02
+10         L_K L_K          0 7.885541e+02
+11         L_K L_V          0 8.629007e+02
+12     L_K density          0 7.328961e+02
+13         L_V L_V          0 8.975415e+02
+14     L_V density          0 8.577875e+02
+15 density density          0 1.151302e+03
+

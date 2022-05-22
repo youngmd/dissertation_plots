@@ -1,0 +1,260 @@
+bvr_cc_plane
+	erase
+#	identification
+	expand 1.001
+# Use this for printing
+#	ctype black
+# Use this for viewing on screen
+#	ctype black
+	ltype 0
+#	limits 0. 2.5 0.1 1.5
+	limits 0. 2.2 0.1 1.5
+# To make the limits square
+#	limits 0.1 1.5 0.1 1.5
+	box	
+	
+	lweight 3
+
+	xlabel (B-V)_0
+	ylabel (V-R)_0
+#        toplabel GCs and Galaxies in the BVR Color-Color Plane
+#        toplabel Template Galaxy Colors from z=0 to z=0.7
+#        toplabel GC Candidates in NGC 4473
+
+        relocate 1.6 0.2
+        expand 1.5
+        label NGC 4473
+        expand 1.001
+
+	data "/Users/krhode/Documents/gcs/phot_z/new_redshifted_colors.out"
+	lines 4 32
+	read umb1 2
+	read bmv1 3
+	read vmr1 4
+	read rmi1 5
+	set bmr1 = bmv1 + vmr1
+	ptype 20 3
+	expand 0.8
+	points bmv1 vmr1
+	expand 1.001
+	connect bmv1 vmr1
+	relocate 1.8 1.38
+	label E/S0
+#	relocate 0.6 1.5
+#	label z=0
+#	relocate -0.03 3.35
+#	label z=0.7
+
+#	lines 48 88
+	lines 48 76
+	read umb2 2
+	read bmv2 3
+	read vmr2 4
+	read rmi2 5
+	set bmr2 = bmv2 + vmr2
+	ptype 6 3
+	expand 0.8
+	points bmv2 vmr2
+	expand 1.001
+	connect bmv2 vmr2
+	relocate 1.20 1.34
+	label Sab
+#	relocate 0.4 1.4
+#	label z=0
+#	relocate -0.3 2.7
+#	label z=0.7
+
+	lines 92 120
+	read umb3 2
+	read bmv3 3
+	read vmr3 4
+	read rmi3 5
+	set bmr3 = bmv3 + vmr3
+	ptype 5 3
+	expand 0.8
+	points bmv3 vmr3
+	expand 1.001
+	connect bmv3 vmr3
+	relocate 0.9 1.18
+	label Sbc
+#	relocate 0.1 1.1
+#	label z=0
+#	relocate -0.6 1.9
+#	label z=0.7
+
+	lines 136 164
+	read umb4 2
+	read bmv4 3
+	read vmr4 4
+	read rmi4 5
+	set bmr4 = bmv4 + vmr4
+	ptype 4 3
+	points bmv4 vmr4
+	connect bmv4 vmr4
+	relocate 0.7 0.97
+	label Scd
+#	relocate -0.05 1.0
+#	label z=0
+#	relocate -0.85 1.4
+#	label z=0.7
+
+	lines 180 208
+	read umb5 2
+	read bmv5 3
+	read vmr5 4
+	read rmi5 5
+	set bmr5 = bmv5 + vmr5
+	ptype 3 3
+	points bmv5 vmr5
+	connect bmv5 vmr5
+#	relocate 0.3 0.7
+	relocate 0.465 0.7
+	label Irr
+	relocate 0.1 0.33
+	label z=0
+	relocate 0.1 0.68
+	label z=0.7
+
+#	data gc_cand_calib.dat.10dec14
+#	data new_gc_cand_calib.dat
+#	read V 17
+#	read BmV 18
+#	read VmR 19
+#	ctype green
+#	ctype black
+#	ptype 20 0
+#	ptype 4 0
+#	points BmV VmR
+#	set x = < 1.65 >
+#	set y = < 0.17 >
+#	points x y
+#	relocate 1.7 0.16
+#	label GC candidates
+
+	data "GCfinder/Final_results_12dec14/gc_cand_calib.dat"
+	read V 17
+	read BmV 18
+	read VmR 19
+	ctype red
+	ctype green
+#	ptype 20 0
+	ptype 4 0
+	points BmV VmR
+#	set x = < 1.65 >
+#	set y = < 0.17 >
+#	points x y
+#	relocate 1.7 0.16
+#	label GC candidates
+
+	data "GCfinder/Final_results_12dec14/keep.out"
+#	data gc_cand_calib.after_cut
+#	data possible_gcs.list
+	read V 17
+	read BmV 18
+	read VmR 19
+	ctype blue
+#	ctype black
+	expand 1.2
+	ptype 20 3
+	points BmV VmR
+	expand 1.001
+
+# Draw a reddening vector - the slope should be E(V-R)/E(B-V)
+# E(V-R) = 0.59 E(B-V) for GC's
+# The length should be A_V = 3.2*E(B-V) = 1.89
+#	ctype red
+	ctype black
+# in upper right corner
+#	draw_arrow 1.8 1.08 2.1 1.26
+# in upper left corner
+	draw_arrow 0.2 1.2 0.5 1.38
+# in lower right corner
+#	draw_arrow 1.7 0.2 2.0 0.38
+#	draw_arrow 0.75 0.6 1.05 0.78
+#	draw_arrow 0.65 0.56 0.95 0.74
+
+#	relocate 1.97 0.2
+#	expand 1.2
+#	label (b)
+#	expand 1.001
+
+	data "/Users/krhode/Documents/gcs/mwgc.dat.22jun99.edited"
+	read gcbmv 21
+	read gcvmr 22
+	read ebmv 15
+	set bmv_corr = gcbmv - ebmv
+	set vmr_corr = gcvmr - (0.59*ebmv)
+#	ctype yellow
+	ctype black
+	ptype 20 3
+#	points bmv_corr vmr_corr
+	set x = < 1.65 >
+	set y = < 0.26 >
+#	points x y
+#	relocate 1.7 0.25
+#	ctype black
+#	label Milky Way GCs
+
+# Put in zero-phot-error color cut line
+	ctype green
+#	ctype black
+
+	data "/Users/krhode/Documents/gcs/4m_mar99/n4472/wiyn_jan00/Color_cut/polyfit_mway_1storder.out"
+	read xcalc 1
+	read ycalc 2
+	ltype 0
+#	connect xcalc ycalc
+
+#	ctype black
+	ctype black
+# Three-sigma scatter lines -- long sides of rectangle
+#	set ycalc1 = ycalc + ((2*0.03)/cos(0.3987798))
+	set ycalc1 = ycalc + ((3*0.03)/cos(0.3987798))
+# which is the right slope?  I think it's actually 0.42..but it doesn't make much of a difference for plotting the box...
+#	set ycalc1 = ycalc + ((3*0.03)/cos(0.4213617))
+#	set ycalc1 = ycalc + ((1.5*0.03)/cos(0.3987798))
+	set xcalc1 = xcalc - (((ycalc1)-ycalc)*sin(0.3987798))
+	connect xcalc1 ycalc1
+#	print <ycalc1>
+#	print <xcalc1>
+
+#	set ycalc1 = ycalc - ((2*0.03)/cos(0.3987798))
+#	set ycalc1 = ycalc - ((2.5*0.03)/cos(0.3987798))
+	set ycalc1 = ycalc - ((3*0.03)/cos(0.3987798))
+	set xcalc1 = xcalc - (((ycalc1)-ycalc)*sin(0.3987798))
+	connect xcalc1 ycalc1
+#	print <ycalc2>
+#	print <xcalc2>
+
+# Draw short sides of rectangle
+# 3.0-sigma above and below
+	set xcalc2 = < 0.5121 0.5879 >
+	set ycalc2 = < 0.4998 0.3044 >
+# 1.5-sigma above, 3.0-sigma below
+#	set xcalc2 = < 0.531 0.5879 >
+#	set xcalc2 = < 0.531 0.6852 >
+#	set xcalc2 = < 0.5247 0.5753 >
+#	set xcalc2 = < 0.5224 0.5753 >
+#	set ycalc2 = < 0.4672 0.337 >
+#	set ycalc2 = < 0.4509 0.3044 >
+	connect xcalc2 ycalc2
+
+
+# 3.0-sigma above and below
+	set xcalc2 = < 0.9521 1.028 >
+	set ycalc2 = < 0.6852 0.4898 >
+# 1.5-sigma above, 3.0-sigma below
+#	set xcalc2 = < 0.971 1.028 >
+#	set ycalc2 = < 0.6363 0.4898 >
+#	
+#xcalc1	0.5753  1.015
+#ycalc1	0..337 0.5224
+#ycalc2 0.6526 0.5224
+# xcalc2 0.5247 0.5753
+#
+#	set xcalc2 = < 0.9647 1.015 >
+#	set ycalc2 = < 0.6526 0.5224 >
+	connect xcalc2 ycalc2
+
+# Reset color type
+	ctype black

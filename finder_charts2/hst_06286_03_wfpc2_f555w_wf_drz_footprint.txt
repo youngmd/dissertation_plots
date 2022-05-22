@@ -1,0 +1,20 @@
+# Footprint Finder
+# ================
+#
+# footprint-file for "hst_06286_03_wfpc2_f555w_wf_drz.fits"
+# 
+# Arguments: -r n4649_hst/hst_06286_03_wfpc2_f555w_wf_drz.fits
+# 
+# Number of chips found, global area [pixel^2], global x_barycenter, global y_barycenter, global ra_barycenter, global dec_barycenter
+# Chipnumber, number of footprint points, parent chip, is chip/island=0 or hole=1, has interior chip/island/hole=1 or not=0, area [pixel^2], x_barycenter, y_barycenter, ra_barycenter, dec_barycenter
+#    x, y, ra, dec
+1 1831611.5 895.98767315 885.056731645 190.909697333 11.5602474374
+0 8 0 0 0 1831611.5 895.98767315 885.056731645 190.909697333 11.5602474374
+	    53   703  190.933598   11.555190
+	   455   722  190.922200   11.555718
+	   469   429  190.921803   11.547579
+	   783   444  190.912901   11.547996
+	   801    40  190.912391   11.536774
+	  1588    70  190.890079   11.537606
+	  1522  1559  190.891947   11.578967
+	    12  1490  190.934762   11.577051

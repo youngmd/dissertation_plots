@@ -1,0 +1,16 @@
+# Footprint Finder
+# ================
+#
+# footprint-file for "NGC7332.R.fits"
+# 
+# Arguments: -r NGC7332.R.fits
+# 
+# Number of chips found, global area [pixel^2], global x_barycenter, global y_barycenter, global ra_barycenter, global dec_barycenter
+# Chipnumber, number of footprint points, parent chip, is chip/island=0 or hole=1, has interior chip/island/hole=1 or not=0, area [pixel^2], x_barycenter, y_barycenter, ra_barycenter, dec_barycenter
+#    x, y, ra, dec
+1 16503204.0 2019.0 2045.5 23.7655722717 339.403867195
+0 4 0 0 0 16503204.0 2019.0 2045.5 23.7655722717 339.403867195
+	     1     1   23.685314  339.489565
+	  4037     1   23.686106  339.317436
+	  4037  4090   23.845784  339.318064
+	     1  4090   23.844990  339.490404

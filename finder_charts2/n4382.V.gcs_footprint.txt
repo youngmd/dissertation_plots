@@ -1,0 +1,16 @@
+# Footprint Finder
+# ================
+#
+# footprint-file for "n4382.V.gcs.fits"
+# 
+# Arguments: -r /Users/youngmd/gcc/n4382/n4382.V.gcs.fits
+# 
+# Number of chips found, global area [pixel^2], global x_barycenter, global y_barycenter, global ra_barycenter, global dec_barycenter
+# Chipnumber, number of footprint points, parent chip, is chip/island=0 or hole=1, has interior chip/island/hole=1 or not=0, area [pixel^2], x_barycenter, y_barycenter, ra_barycenter, dec_barycenter
+#    x, y, ra, dec
+1 54215838.0 3754.0 3612.5 18.1180826073 186.306554555
+0 4 0 0 0 54215838.0 3754.0 3612.5 18.1180826073 186.306554555
+	     1     1   17.854174  186.591964
+	  7507     1   17.856660  186.018910
+	  7507  7224   18.381571  186.020283
+	     1  7224   18.379077  186.595059

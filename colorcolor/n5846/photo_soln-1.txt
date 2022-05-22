@@ -1,0 +1,18 @@
+26.4343346608    # zp_v
+0.0269964712726      # zp_v_err
+0.15339472706     # zp_bv
+0.0228736434794       # zp_bv_err
+-0.13788818499  # zp_vr
+0.0375927714157  # zp_vr_err
+-0.00178500592626  # eps_bv
+0.0400817589082  # eps_bv_err
+1.14226399482  # mu_bv
+ 0.00104213776911   # mu_bv_err
+0.887969438753 # mu_vr
+0.00150761745539   # mu_vr_err
+0.25         # kb
+0.15         # kv
+0.10         # kr
+-0.0    # b bootstrap offset
+-0.036   # v bootstrap offset
+-0.025   # r bootstrap offset
